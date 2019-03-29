@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>serializeArray()</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>  
+	$(document).ready(function(){  
+	    $("button").click(function(){  
+	        var x = $("form").serializeArray();  
+	        $.each(x, function(i, field){  
+	            $("#results").append(field.name + ":" + field.value + " ");  
+	        });  
+	    });  
+	});  
+	</script>  
+	</head>  
+	<body>  
+		<h1>Jquery Form methods= serializeArray()</h1>
+		<hr>
+	<form action="">  
+	  First name: <input type="text" name="FirstName" value="Javed"><br>  
+	  Last name: <input type="text" name="LastName" value="Ali"><br>  
+	</form>  
+	<button>Serialize form values</button>  
+	<div id="results"></div>  
+	
+</body>
+</html>

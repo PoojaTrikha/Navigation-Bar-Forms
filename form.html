@@ -1,0 +1,80 @@
+<html>
+    <head>
+    <title>HTML Form</title>
+    <style>
+     .field_set{
+                 border-color: blue;
+                 border-style: solid;
+   } 
+        
+   .textboxclass {
+                 height: 20px;
+                 width: 350px;
+}
+    </style>
+    </head>
+<body>
+<form>
+    <center style="color:blue"><h1>Dynamic forms</h1></center>
+     <fieldset class="field_set">
+     <legend style="color:blue">fieldset</legend>
+     <table style="width:89%">
+  <tr>
+    <td>Name</td>
+    <td><input type="text" name="username" id="user-name" placeholder="name" class="textboxclass"></td> 
+    <td>Date</td>
+    <td><input  type="date" name="bday" class="textboxclass"></td> 
+  <tr>
+    <td>Distance</td>
+    <td><input type="number" placeholder="distance" class="textboxclass"></td> 
+    <td>Datetime-local</td>
+    <td><input type="datetime-local" name="bdaytime" class="textboxclass"></td> 
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td><input type="email" name="emailaddress" placeholder="email" class="textboxclass"></td> 
+    <td>Month</td>
+    <td><input type="month" name="bdaymonth" class="textboxclass"></td> 
+  </tr>
+</table>
+ <fieldset class="field_set">
+ <legend style="color:blue">nested model example</legend> 
+     <table style="width:98%">
+       <tr>
+           <td>concinnate.txt</td>
+           <td><input type="number" placeholder="1.0" step="0.01" min="0" max="10" class="textboxclass"></td> 
+           <td>concinnate.ion</td>
+           <td><input type="number" placeholder="-1.0" step="0.01" min="-10" max="0" class="textboxclass"></td> 
+       </tr>
+    </table>
+ </fieldset> 
+ <table style="width:85%">
+       <tr>
+           <td>Number</td>
+           <td><input type="number" name="quantity" class="textboxclass"></td>
+           <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password</td>
+           <td><input style="margin-left: 40px" ;type="password" name="pwd" class="textboxclass"></td>
+       </tr>
+       <tr>
+           <td>Birthday</td>
+           <td><input input type="month" name="bdaymonth" class="textboxclass"></td>
+           <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Telephone</td>
+           <td><input  style="margin-left: 40px" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="textboxclass"></td>
+       </tr>
+       <tr>
+           <td>TextArea</td>
+           <td><textarea rows="4" cols="46" name="comment" form="usrform">Enter text here...</textarea></td>
+           <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time</td>
+           <td><input  style="margin-left: 40px"type="time" name="usr_time" class="textboxclass"></td>
+       </tr>
+       <tr>
+           <td>URL</td>
+           <td><input type="url" name="homepage" class="textboxclass"></td>
+           <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Week</td>
+           <td><input  style="margin-left: 40px" type="week" name="week_year" class="textboxclass"></td>
+       </tr>
+    </table>
+ </fieldset>
+</form>    
+</body>
+</html>

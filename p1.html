@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>serialize()</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>  
+	$(document).ready(function(){  
+	    $("button").click(function(){  
+	        $("div").text($("form").serialize());  
+	    });  
+	});  
+	</script>  
+</head>  
+<body>  
+		<h1>Jquery Form methods= serialize()</h1>
+		<hr>
+	<form action="">  
+	  First name: <input type="text" name="FirstName" value=""><br>  
+	  Last name: <input type="text" name="LastName" value=""><br>  
+	</form>  
+	<button>Serialize form values</button>  
+	<div></div>  
+	
+</body>
+</html>
